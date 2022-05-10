@@ -22,8 +22,8 @@ function App() {
     <Container sx = {{backgroundColor:'#efc8b1',padding:'30px',height:'50',width:'100',border:'1px solid black'}}>
       <form onSubmit = {handleSubmit}>
         <div><TextField color='secondary' fullWidth  label = 'Product Name' varient = 'outlined' value = {pname} onChange={(event)=>setProductName(event.target.value)} required/></div>
-        <div className='price'><TextField color='secondary'  fullWidth  label = 'Product Price' value = {pprice} varient = 'outlined' onChange={(event)=>setProductPrice(event.target.value)} required/></div>
-        <div className = 'btn'><Button type = 'submit' variant="contained" sx ={{textAlign:'center'}}>UPLOAD</Button> </div>
+        <div><TextField color='secondary'  fullWidth  label = 'Product Price' value = {pprice} varient = 'outlined' onChange={(event)=>setProductPrice(event.target.value)} required/></div>
+        <div><Button type = 'submit' variant="contained" sx ={{textAlign:'center'}}>UPLOAD</Button> </div>
         </form>
         </Container>
         </div>
