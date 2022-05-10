@@ -21,7 +21,6 @@ export default function FormDisplay({ displayDetails, setDisplayDetails, setProd
         handleDelete();
         setOpen(false);
     }
-    console.log({ displayDetails })
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClickIcon = (event,index,product) => {
@@ -45,7 +44,6 @@ export default function FormDisplay({ displayDetails, setDisplayDetails, setProd
         handleClose()
     }
 
-    console.log(displayDetails)
     return (
         <>
             <Grid container spacing={3}>
